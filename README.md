@@ -1,23 +1,46 @@
 # Docker Labz
-A ideia aqui e criar e deployar nosso primeiro `Dockerfile` com o Docker e espelhar o servico na porta `3000`.
+A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolação e seguindo as boas práticas de mercado. Vamos passar pelos seguintes tópicos até que seja possível ter um volume para nossa aplicação e tudo mais, inclusive um `Docker Compose`.
 
-- Running your first container
-- Building containers
-- Learning what containers are running and removing them
-- Using volumes to persist data
-- Using bind mounts to support development
-- Using container networking to support multi-container applications
-- Using Docker Compose to simplify the definition and sharing of applications
-- Using image layer caching to speed up builds and reduce push/pull size
-- Using multi-stage builds to separate build-time and runtime dependencies
+## Sumario
 
-## Getting Started
+- [Docker Labz](#docker-labz)
+  - [Sumario](#sumario)
+  - [Create the Dockerfile](#create-the-dockerfile)
+  - [Buid your Dockerfile](#buid-your-dockerfile)
+  - [Check and acess the URL](#check-and-acess-the-url)
+  - [Development](#development)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-If you wish to run the tutorial, you can use the following command after installing Docker Desktop:
+- Executando seu primeiro contêiner
+- Construir contêineres
+- Aprender quais contêineres estão sendo executados e removê-los
+- Usando volumes para persistir dados
+- Usando montagens de ligação para apoiar o desenvolvimento
+- Usando a rede de contêineres para oferecer suporte a aplicativos de vários contêineres
+- Usando o Docker Compose para simplificar a definição e o compartilhamento de aplicativos
+- Usando cache de camada de imagem para acelerar compilações e reduzir o tamanho de push/pull
+- Usando compilações de vários estágios para separar dependências de tempo de compilação e de tempo de execução
 
-```bash
-docker run -d -p 80:80 docker/getting-started
+## Create the Dockerfile
+
+```dockerfile
+# syntax=docker/dockerfile:1
+FROM node:12-alpine
+RUN apk add --no-cache python2 g++ make
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
 ```
+
+## Buid your Dockerfile
+Hora de criar o build do Dockerfile, veja o comando abaixo para ajustar:
+
+` docker build -t getting-started .`
+
+## Check and acess the URL
 
 Once it has started, you can open your browser to [http://localhost](http://localhost).
 
