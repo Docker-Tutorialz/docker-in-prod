@@ -1,17 +1,24 @@
 # Docker Labz
-A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolação e seguindo as boas práticas de mercado. Vamos passar pelos seguintes tópicos até que seja possível ter um volume para nossa aplicação e tudo mais, inclusive um `Docker Compose`.
+A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolação e seguindo as boas práticas de mercado. Vamos passar pelos seguintes tópicos abaixo até que seja possível ter um volume para nossa aplicação e tudo mais, inclusive um `Docker Compose`. Para maiores informações consulte sempre a documentação oficial do Docker.
 
 ## Sumario
 
 - [Docker Labz](#docker-labz)
   - [Sumario](#sumario)
+  - [What is Docker?](#what-is-docker)
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Buid your Dockerfile](#buid-your-dockerfile)
     - [Check and acess the URL](#check-and-acess-the-url)
     - [Development](#development)
+  - [Docker from Zero to Hero](#docker-from-zero-to-hero)
   - [Contributing](#contributing)
   - [License](#license)
 
+
+## What is Docker?
+Tudo começou em 2008, quando Solomon Hykes fundou a dotCloud, empresa especializada em PaaS com um grande diferencial: o seu Platform-as-a-Service não era atrelado a nenhuma linguagem de programação específica, como era o caso, por exemplo, da Heroku, que suportava somente aplicações desenvolvidas em Ruby. A grande virada na história da dotCloud ocorreu em março de 2013, quando decidiram tornar open source o core de sua plataforma -- assim nascia o Docker!
+
+As primeiras versões do Docker nada mais eram do que um wrapper do LXC integrado ao Union Filesystem, mas o seu crescimento foi fantástico e muito rápido, tanto que em seis meses seu GitHub já possuía mais de seis mil stars e mais de 170 pessoas contribuindo para o projeto ao redor do mundo. Com isso, a dotCloud passou a se chamar Docker e a versão 1.0 foi lançada apenas 15 meses após sua versão 0.1. A versão 1.0 do Docker trouxe muito mais estabilidade e foi considerada "production ready", além de trazer o Docker Hub, um repositório público para containers. Baseado em [Descomplicando Docker](https://github.com/badtuxx/DescomplicandoDocker).
 
 ### Create the Dockerfile
 
@@ -32,8 +39,7 @@ Hora de criar o build do Dockerfile, veja o comando abaixo para ajustar:
 ` docker build -t getting-started .`
 
 
-<details>
-  <summary><b></b> <em>(clique para ver a resposta)</em></summary>
+<details><summary><b></b> <em>(clique para ver a resposta)</em></summary>
 
 ```bash
 Sending build context to Docker daemon  4.654MB   
@@ -112,6 +118,9 @@ local machine and help you see changes instantly.
 ```bash
 docker-compose up
 ```
+
+## Docker from Zero to Hero
+Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da LINUXtips. Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
