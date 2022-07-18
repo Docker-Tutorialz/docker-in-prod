@@ -151,16 +151,32 @@ Hora de usar um dos recursos mais legais que temos, a parte de Registry do Docke
 - Vamos usar posteriormente esse feature dentro da CLI do Docker.
 
 ### Push the  Image
-Agora vamos subir nossa imagem para o Dockerhub. Siga o comando abaixo:
+Agora vamos subir nossa imagem para o Dockerhub. Siga o comando abaixo.  Antes de fazer esse push da imagem precisamos realizar outro comando que vai organizar nossa image de acordo com o padrão do Docker Registry.
+
+`# docker tag getting-started:latest amaurybsouza/getting-started:v1.1`
+
+- Agora efetue o login para acesso ao Dockerhub:
+
+`# docker login`
+
+- Agora prossiga com o `push` da imagem:
 
 `# docker push amaurybsouza/getting-started:v1.1`
 
 <details><summary><b></b> <em>(clique para ver a resposta)</em></summary>
 
 ```bash
-
+The push refers to repository [docker.io/amaurybsouza/getting-started]
+731137e8e111: Pushed
+d532ef78df01: Pushed
+4f34b3e21f5e: Pushed
+46c177831edd: Pushed
+7f30cde3f699: Pushed
+fe810f5902cc: Pushed
+dfd8c046c602: Pushed
+4fc242d58285: Pushed
+v1.1: digest: sha256:4685766253ed3a249233b06df8a98eb7426d13a47ce893524051a25ddc4212de size: 2000
 ```
-
 </details>
 
 
