@@ -12,7 +12,9 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
     - [Start the container](#start-the-container)
     - [Check and acess the app URL](#check-and-acess-the-app-url)
     - [Docker Registry](#docker-registry)
+    - [Push the  Image](#push-the--image)
   - [Docker from Zero to Hero](#docker-from-zero-to-hero)
+  - [Stack Overflow Saves](#stack-overflow-saves)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -144,7 +146,22 @@ Uma vez feita a criação do container, acesse seu browser e veja a app rodando 
 ### Docker Registry
 Hora de usar um dos recursos mais legais que temos, a parte de Registry do Docker,  ou pelo menos podemos chamar de `Dockerhub`. Use bastante essa parte, veja a documentação do Dockerhub, crie sua conta para que você possa aprender e fazer seus envios para o registry.
 
-Acesse [aqui](https://hub.docker.com/) o Dockerhub.
+- Acesse [aqui](https://hub.docker.com/) o Dockerhub.
+- Também quando você estiver conectado, crie um repositório.
+- Vamos usar posteriormente esse feature dentro da CLI do Docker.
+
+### Push the  Image
+Agora vamos subir nossa imagem para o Dockerhub. Siga o comando abaixo:
+
+`# docker push amaurybsouza/getting-started:v1.1`
+
+<details><summary><b></b> <em>(clique para ver a resposta)</em></summary>
+
+```bash
+
+```
+
+</details>
 
 
 
@@ -153,6 +170,11 @@ Acesse [aqui](https://hub.docker.com/) o Dockerhub.
 
 ## Docker from Zero to Hero
 Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da [LINUXtips](https://www.linuxtips.io/). Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
+
+## Stack Overflow Saves
+Algumas pesquisas que eu precisei fazer durante este processo.
+
+- denied: requested access to the resource is denied. Correção [aqui].(https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
