@@ -9,6 +9,7 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
     - [Get the app](#get-the-app)
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Buid your Dockerfile](#buid-your-dockerfile)
+    - [Start the container](#start-the-container)
     - [Check and acess the URL](#check-and-acess-the-url)
     - [Development](#development)
   - [Docker from Zero to Hero](#docker-from-zero-to-hero)
@@ -29,6 +30,8 @@ Para que possamos começar de buenas, clique [aqui](https://github.com/docker/ge
 
 ### Create the Dockerfile
 Para que possamos prosseguir de forma correta, vamos agora criar nosso Dockerfile, seguindo este modelo abaixo. Apenas uma ressalva, não se esqueça de criar o arquivo de Dockerfile no mesmo nível do arquivo `package.json`.
+
+- Crie o arquivo chamado `Dockerfile` e insira esse conteúdo dentro do arquivo:
 
 ```dockerfile
 # syntax=docker/dockerfile:1
@@ -111,6 +114,26 @@ Removing intermediate container c0ecacfd20dc
  ---> 633c01ce663d
 Successfully built 633c01ce663d
 Successfully tagged getting-started:latest
+```
+</details>
+
+### Start the container
+Hora de criar nosso container, para isso siga as etapas abaixo:
+
+`# docker run -dp 3000:3000 getting-started`
+
+- Visualizando  a saida do comando, perceba que existe outros containers rodando, se atente apenas nesse que estamos criando.
+
+<details><summary><b></b> <em>(clique para ver a resposta)</em></summary>
+
+```bash
+# docker container ls
+CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS          PORTS                                                 NAMES
+bc63ea004a6e   getting-started         "docker-entrypoint.s…"   6 seconds ago   Up 5 seconds    0.0.0.0:3000->3000/tcp, :::3000->3000/tcp             priceless_tu
+58a335a79b98   kindest/node:v1.21.1    "/usr/local/bin/entr…"   33 hours ago    Up 6 hours      127.0.0.1:45229->6443/tcp                             kind-control-plane
+100358c88659   kindest/node:v1.21.1    "/usr/local/bin/entr…"   33 hours ago    Up 6 hours                                                            kind-worker
+29feb5952c3d   kindest/node:v1.21.1    "/usr/local/bin/entr…"   33 hours ago    Up 6 hours                                                            kind-worker2
+47aaf241467d   rancher/server:stable   "/usr/bin/entry /usr…"   4 months ago    Up 22 seconds   3306/tcp, 0.0.0.0:8081->8080/tcp, :::8081->8080/tcp   determined_dubinsky
 ```
 </details>
 
