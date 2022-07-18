@@ -13,7 +13,7 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
     - [Check and acess the app URL](#check-and-acess-the-app-url)
     - [Docker Registry](#docker-registry)
     - [Push the  Image](#push-the--image)
-  - [Docker Volumes](#docker-volumes)
+    - [Docker Volumes](#docker-volumes)
   - [Docker from Zero to Hero](#docker-from-zero-to-hero)
   - [Stack Overflow Saves](#stack-overflow-saves)
   - [Contributing](#contributing)
@@ -180,10 +180,16 @@ v1.1: digest: sha256:4685766253ed3a249233b06df8a98eb7426d13a47ce893524051a25ddc4
 ```
 </details>
 
-## Docker Volumes
+### Docker Volumes
+Para que possamos ter salvo nossos dados da aplicação, precisamos persistir os dados do container, para que caso, ele venha a ser deletado  os dados da aplicação possam ser salvos em algum diretório específico da maquineta que esta servindo o Docker.
 
+- Vamos criar o primeiro volume para que possamos ter essa ideia:
 
+`# docker volume create todo-db`
 
+- Agora vamos executar mais um comando que vai criar o container com os dados sendo persistidos.
+
+`# docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started`
 
 
 ## Docker from Zero to Hero
