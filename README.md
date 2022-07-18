@@ -197,6 +197,23 @@ Verifique do lado da app se está correto, abra a app no seu browser e adicione 
 - Inicie outro container conforme mostrado acima usando os volumes.
 - Abra novamente a app e veja que os dados cadastrados estão salvos.
 
+Para ver mais detalhes desse volume que criamos, veja mais com o comando abaixo:
+
+```bash
+# docker volume inspect todo-db 
+[
+    {
+        "CreatedAt": "2022-07-18T07:29:11-03:00",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/todo-db/_data",
+        "Name": "todo-db",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+```
+
 ## Docker from Zero to Hero
 Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da [LINUXtips](https://www.linuxtips.io/). Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
 
