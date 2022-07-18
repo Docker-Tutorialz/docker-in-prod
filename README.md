@@ -10,7 +10,7 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Buid your Dockerfile](#buid-your-dockerfile)
     - [Start the container](#start-the-container)
-    - [Check and acess the URL](#check-and-acess-the-url)
+    - [Check and acess the app URL](#check-and-acess-the-app-url)
     - [Development](#development)
   - [Docker from Zero to Hero](#docker-from-zero-to-hero)
   - [Contributing](#contributing)
@@ -137,9 +137,9 @@ bc63ea004a6e   getting-started         "docker-entrypoint.s…"   6 seconds ago 
 ```
 </details>
 
-### Check and acess the URL
+### Check and acess the app URL
 
-Once it has started, you can open your browser to [http://localhost](http://localhost).
+Uma vez feita a criação do container, acesse seu browser e veja a app rodando em `http://localhost:3000`
 
 ### Development
 
