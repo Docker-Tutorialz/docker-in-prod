@@ -174,7 +174,7 @@ Para que você possa aprender Docker do zero, de forma gratuita, com material de
 ## Stack Overflow Saves
 Algumas pesquisas que eu precisei fazer durante este processo.
 
-- denied: requested access to the resource is denied. Correção [aqui].(https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker)
+- denied: requested access to the resource is denied. Correção [aqui](https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
