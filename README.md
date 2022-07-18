@@ -1,5 +1,5 @@
 # Docker Labz
-A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolação e seguindo as boas práticas de mercado. Vamos passar pelos seguintes tópicos abaixo até que seja possível ter um volume para nossa aplicação e tudo mais, inclusive um `Docker Compose`. Para maiores informações consulte sempre a documentação oficial do Docker.
+A ideia aqui desse repositório é aprender Docker do zero mesmo, sem enrolação e seguindo as boas práticas de mercado. Vamos passar pelos seguintes tópicos abaixo até que seja possível ter um volume para nossa aplicação e tudo mais, inclusive um `Docker Compose`. Para maiores informações consulte sempre a documentação oficial do Docker.
 
 ## Sumario
 
