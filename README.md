@@ -191,6 +191,11 @@ Para que possamos ter salvo nossos dados da aplicação, precisamos persistir os
 
 `# docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started`
 
+Verifique do lado da app se está correto, abra a app no seu browser e adicione alguns itens.
+
+- Pare o container iniciado e remova.
+- Inicie outro container conforme mostrado acima usando os volumes.
+- Abra novamente a app e veja que os dados cadastrados estão salvos.
 
 ## Docker from Zero to Hero
 Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da [LINUXtips](https://www.linuxtips.io/). Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
