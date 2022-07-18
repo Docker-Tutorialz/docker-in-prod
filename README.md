@@ -11,7 +11,7 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
     - [Buid your Dockerfile](#buid-your-dockerfile)
     - [Start the container](#start-the-container)
     - [Check and acess the app URL](#check-and-acess-the-app-url)
-    - [Development](#development)
+    - [Docker Registry](#docker-registry)
   - [Docker from Zero to Hero](#docker-from-zero-to-hero)
   - [Contributing](#contributing)
   - [License](#license)
@@ -141,14 +141,15 @@ bc63ea004a6e   getting-started         "docker-entrypoint.s…"   6 seconds ago 
 
 Uma vez feita a criação do container, acesse seu browser e veja a app rodando em `http://localhost:3000`
 
-### Development
+### Docker Registry
+Hora de usar um dos recursos mais legais que temos, a parte de Registry do Docker,  ou pelo menos podemos chamar de `Dockerhub`. Use bastante essa parte, veja a documentação do Dockerhub, crie sua conta para que você possa aprender e fazer seus envios para o registry.
 
-This project has a `docker-compose.yml` file, which will start the mkdocs application on your
-local machine and help you see changes instantly.
+Acesse [aqui](https://hub.docker.com/) o Dockerhub.
 
-```bash
-docker-compose up
-```
+
+
+
+
 
 ## Docker from Zero to Hero
 Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da [LINUXtips](https://www.linuxtips.io/). Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
