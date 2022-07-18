@@ -6,6 +6,7 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
 - [Docker Labz](#docker-labz)
   - [Sumario](#sumario)
   - [What is Docker?](#what-is-docker)
+    - [Get the app](#get-the-app)
     - [Create the Dockerfile](#create-the-dockerfile)
     - [Buid your Dockerfile](#buid-your-dockerfile)
     - [Check and acess the URL](#check-and-acess-the-url)
@@ -19,6 +20,9 @@ A ideia aqui desse repositóeio é aprender Docker do zero mesmo, sem enrolaçã
 Tudo começou em 2008, quando Solomon Hykes fundou a dotCloud, empresa especializada em PaaS com um grande diferencial: o seu Platform-as-a-Service não era atrelado a nenhuma linguagem de programação específica, como era o caso, por exemplo, da Heroku, que suportava somente aplicações desenvolvidas em Ruby. A grande virada na história da dotCloud ocorreu em março de 2013, quando decidiram tornar open source o core de sua plataforma -- assim nascia o Docker!
 
 As primeiras versões do Docker nada mais eram do que um wrapper do LXC integrado ao Union Filesystem, mas o seu crescimento foi fantástico e muito rápido, tanto que em seis meses seu GitHub já possuía mais de seis mil stars e mais de 170 pessoas contribuindo para o projeto ao redor do mundo. Com isso, a dotCloud passou a se chamar Docker e a versão 1.0 foi lançada apenas 15 meses após sua versão 0.1. A versão 1.0 do Docker trouxe muito mais estabilidade e foi considerada "production ready", além de trazer o Docker Hub, um repositório público para containers. Baseado em [Descomplicando Docker](https://github.com/badtuxx/DescomplicandoDocker).
+
+### Get the app
+Para que possamos começar de buenas, clique aqui para que você obtenha os dados da app.
 
 ### Create the Dockerfile
 
@@ -120,7 +124,7 @@ docker-compose up
 ```
 
 ## Docker from Zero to Hero
-Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da LINUXtips. Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
+Para que você possa aprender Docker do zero, de forma gratuita, com material de qualidade e boa didática, comece por esse curso ministrado pelo Jefferson da [LINUXtips](https://www.linuxtips.io/). Clique [aqui](https://www.youtube.com/watch?v=Wm99C_f7Kxw&list=PLf-O3X2-mxDn1VpyU2q3fuI6YYeIWp5rR&ab_channel=LINUXtips) para que você comece hoje mesmo com Docker.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
