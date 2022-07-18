@@ -24,19 +24,11 @@ As primeiras versões do Docker nada mais eram do que um wrapper do LXC integrad
 ### Get the app
 Para que possamos começar de buenas, clique [aqui](https://github.com/docker/getting-started/tree/master/app) para que você obtenha os dados da app. Agora que você tem baixado essa app localmente, tenha certeza que está com a seguinte estrutura abaixo:
 
+![docker](images/docker01.png)
 
-
-```bash
-# ls -l 
-total 188
--rw-r--r-- 1 root root    183 jul 17 16:43 Dockerfile
--rw-r--r-- 1 root root    646 jul 17 16:41 package.json
-drwxr-xr-x 4 root root   4096 jul 17 16:41 spec
-drwxr-xr-x 5 root root   4096 jul 17 16:41 src
--rw-r--r-- 1 root root 174891 jul 17 16:41 yarn.lock
-```
 
 ### Create the Dockerfile
+Para que possamos prosseguir de forma correta, vamos agora criar nosso Dockerfile, seguindo este modelo abaixo. Apenas uma ressalva, não se esqueça de criar o arquivo de Dockerfile no mesmo nível do arquivo `package.json`.
 
 ```dockerfile
 # syntax=docker/dockerfile:1
